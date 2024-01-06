@@ -20,3 +20,7 @@ func (o Option[T]) Value() (T, bool) {
 	var t T // return zero value
 	return t, false
 }
+
+func (o Option[T]) Valid() bool {
+	return o.valid
+}
